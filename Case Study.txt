@@ -1,0 +1,9 @@
+mình có case này để cho các bạn SV nhóm ngành Kinh tế đang trên hành trình học tập (level beginner) có thể thử sức/ practice về automation hen, data mình lấy từ đơn hàng thực tế mình mua trên sàn TMDT:
+Link data: https://bit.ly/ecommerce-logistics-data
+Tính thời gian mean / median từ kho 'Cu Chi SOC' cho đến lần giao hàng đầu tiên (thành công hay không thành công cũng tính).
+Lọc ra các đơn hàng từ 'Cu Chi SOC' đến địa chỉ người nhận mà không thông qua hub '50-HCM Quan 10/Phuong 15 LM Hub' (vì nhà mình ở hub này gần hơn các hub khác)
+Tại sao cần giải quyết bài toán này:
+Tính thử xem là transit time từ 1 hub/DC đến người dùng là bao nhiêu để có phương án cải thiện performance (nếu có)
+Tại sao không tính cho tới lúc nhận hàng cuối cùng mà chỉ tính cho tới lần giao hàng đầu tiên (first attempt) ? -> vì đó là carrier performance, người nhận có thể delay thêm 2,3 ngày không nhận, nếu tính thêm 2,3 ngày này vào sẽ không fair cho carrier.
+Muốn xem có đơn hàng nào không đi qua hub gần nhà mình mà đơn vị vận chuyển phải thông qua 1 hub khác (có thể có vấn đề gì về vận hành? hoặc đây là 1 case team vận hạnh đã tối ưu route?)
+Không quan trọng tool gì (Python/R/SQL/VBA... đều ok)
